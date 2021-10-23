@@ -8,6 +8,8 @@ import { NavComponent } from './component/nav/nav.component';
 import { GaleryComponent } from './component/galery/galery.component';
 import { FormComponent } from './component/form/form.component';
 import { FootComponent } from './component/foot/foot.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './module/material/material.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FootComponent } from './component/foot/foot.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
