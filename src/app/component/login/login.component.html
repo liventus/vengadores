@@ -1,1 +1,49 @@
-<p>login works!</p>
+<div class="d-flex contenedor mt-2 container-fluid contenedor">
+    <div class="columna__1">
+        <img class="columna__imagen" src="./assets/logos/pyme.jpg" alt="">
+    </div>
+        
+        <div class="columna__2 m-3  ">
+          <h1 class="text-light">SOLUCIONES PARA TU EMPRENDIMIENTO</h1>
+
+          <h2 class="text-light">Ingresa tus datos para iniciar tu evaluacion</h2>
+
+          <form class="" >
+               <div class="d-flex justify-content-evenly " >
+                <mat-form-field appearance="outline">
+                    <mat-label class="text-light">Dni</mat-label>
+                    <input matInput placeholder="Numero de DNI">
+                    
+                  </mat-form-field>
+
+                  <mat-form-field appearance="outline">
+                    <mat-label class="text-light" >Numero de celular</mat-label>
+                    <input matInput placeholder="Numero de celular">
+                    
+                    
+                  </mat-form-field>
+               </div>
+
+               <div>
+                <mat-form-field appearance="outline" class="email">
+                    <mat-label type="email" class="text-light">Correo Electronico</mat-label>
+                    <input matInput placeholder="Numero de DNI">
+                    <mat-hint class="text-light">opcional</mat-hint>
+                  </mat-form-field>
+
+
+               </div>
+               <div class="px-4 pt-5" >
+                <button mat-raised-button color="primary" routerLink="/login">REGISTRARSE</button>
+              </div>
+            
+
+
+               
+          </form>
+
+        
+
+
+    </div>
+</div>
