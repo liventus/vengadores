@@ -6,6 +6,7 @@ import { LoginComponent } from './component/login/login.component';
 const routes: Routes = [
   {path:'home', component:GaleryComponent},
   {path:'login', component:LoginComponent },
+  {path: '', redirectTo:'home', pathMatch: 'full'},
 
   
 ];

@@ -8,33 +8,33 @@
 
           <h2 class="text-light">Ingresa tus datos para iniciar tu evaluacion</h2>
 
-          <form class="" >
+          <form  [formGroup]="pymeform"  (ngSubmit) ="onSubmit()" >
                <div class="d-flex justify-content-evenly " >
-                <mat-form-field appearance="outline">
+                <mat-form-field appearance="outline" >
                     <mat-label class="text-light">Dni</mat-label>
-                    <input matInput placeholder="Numero de DNI">
+                    <input class="text-light" matInput placeholder="Numero de DNI" formControlName="dni">
                     
                   </mat-form-field>
 
                   <mat-form-field appearance="outline">
                     <mat-label class="text-light" >Numero de celular</mat-label>
-                    <input matInput placeholder="Numero de celular">
+                    <input class="text-light" matInput placeholder="Numero de celular" formControlName="telefono" >
                     
                     
                   </mat-form-field>
                </div>
 
                <div>
-                <mat-form-field appearance="outline" class="email">
+                <mat-form-field appearance="outline" class="email" >
                     <mat-label type="email" class="text-light">Correo Electronico</mat-label>
-                    <input matInput placeholder="Numero de DNI">
+                    <input class="text-light" matInput placeholder="Numero de DNI" formControlName="correo">
                     <mat-hint class="text-light">opcional</mat-hint>
                   </mat-form-field>
 
 
                </div>
                <div class="px-4 pt-5" >
-                <button mat-raised-button color="primary" routerLink="/login">REGISTRARSE</button>
+                <button type="submit"  [disabled]="!pymeform.valid" mat-raised-button color="primary" routerLink="/login" routerLink="/home" >REGISTRARSE</button>
               </div>
             
 
